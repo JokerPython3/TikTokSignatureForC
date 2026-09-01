@@ -1,0 +1,24 @@
+{
+  "method": "POST",
+  "url": "https://api16-normal-c-alisg.tiktokv.com/passport/email/send_code/",
+  "query": "passport-sdk-version=6041890&device_platform=android&os=android&ssmix=a&_rticket=1788041680221&cdid=3a6f6d4e-...&channel=googleplay&aid=1233&app_name=musical_ly&version_code=410903&version_name=41.9.3&manifest_version_code=2024109030&update_version_code=2024109030&ab_version=41.9.3&resolution=1920%2A985&dpi=180&device_type=WayDroid+x86_64+Device&device_brand=waydroid&language=en&os_api=33&os_version=13&ac=mobile&is_pad=1&app_type=normal&sys_region=US&last_install_time=1788041680&timezone_name=GMT&app_language=en&timezone_offset=0&host_abi=arm64-v8a&locale=en&ac2=unknown&uoo=1&op_region=US&build_number=41.9.3&region=US&ts=1788041680&iid=7400000000000000001&device_id=7442000000000000001&openudid=4a8e0f1c2b3d5400&support_webview=1&reg_store_region=ca&user_selected_region=0&okhttp_version=4.2.243.16-tiktok-fix&use_store_region_cookie=1",
+  "body": "account_sdk_source=app&rule_strategies=2&mix_mode=1&multi_login=1&type=3736&email=73616d706c65&email_theme=2&use_passport_ticket=1&scene=3",
+  "body_len": 138,
+  "content_type": "application/x-www-form-urlencoded; charset=UTF-8",
+  "headers": {
+    "Host": "api16-normal-c-alisg.tiktokv.com",
+    "Sdk-Version": "2",
+    "Tt-Ticket-Guard-Iteration-Version": "0",
+    "X-Tt-Dm-Status": "login=0;ct=1;rt=6",
+    "Tt-Ticket-Guard-Version": "3",
+    "Passport-Sdk-Settings": "x-tt-token",
+    "Passport-Sdk-Sign": "x-tt-token",
+    "Passport-Sdk-Version": "-1",
+    "X-Tt-Bypass-Dp": "1",
+    "X-Vc-Bdturing-Sdk-Version": "2.3.17.i18n",
+    "Tt-Device-Guard-Iteration-Version": "1",
+    "User-Agent": "com.zhiliaoapp.musically/2024109030 (Linux; U; Android 13; en; WayDroid x86_64 Device; Build/TQ3A.230901.001;tt-ok/3.12.13.21)",
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Content-Length": "138"
+  }
+}

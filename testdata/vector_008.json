@@ -1,0 +1,56 @@
+{
+  "name": "gorgon version 4404 (V3)",
+  "input": {
+    "params": [
+      [
+        "aid",
+        "1233"
+      ],
+      [
+        "device_id",
+        "7442000000000000001"
+      ],
+      [
+        "version_name",
+        "41.9.3"
+      ],
+      [
+        "ts",
+        "1788041680"
+      ],
+      [
+        "app_language",
+        "en"
+      ]
+    ],
+    "data": [
+      [
+        "k",
+        "v"
+      ]
+    ],
+    "cookie": null,
+    "timestamp": 1700000003,
+    "sec_device_id": "secdev123456789ABCDEF",
+    "aid": 1233,
+    "license_id": 1611921764,
+    "platform": 0,
+    "sdk_version_str": "v05.00.06-ov-android",
+    "sdk_version": 167775296,
+    "version": 4404
+  },
+  "random": {
+    "gorgon_byte3": 85,
+    "gorgon_byte7": 102,
+    "argus_rand": 2,
+    "ladon_random": "01020304"
+  },
+  "expected": {
+    "x_argus": "8oEOJVdob+G/gGROki4+AIxcKSzoGhoNl5ZSQYs+qF4anbpf+tIgVHMztWb3449B0CrTR54oN27AYVSXHrJFLCymM69N+Pze5dPyVTXey4zLTanPC2os/ayTI2EMGFEnyDzA6anOdqxy4JjRXmrMBlDYRkQix/Wv3MVXWPbU2QOQO6BnXYhqojiXtlzf9p2PT470uGiYr88NkXu/z1mX6JnXl+UHzI2c2BsuuQsgl5pdQ5ilWJcSjCrEmYxjDQgXnSF0KxoCZ/RqQoY28c7f4Ri7w/RUF5lCDwkD7yXiN9RGQg==",
+    "x_ladon": "AQIDBBM604UwVciMzM1iFW+eqehDhD8hxvfmokrn6O+AmKsJ",
+    "x_gorgon": "0404b0d30000599561b01f83074ecee15dbc3694a6177ca7ed41",
+    "x_khronos": "1700000003",
+    "x_tt_request_ticket": "1700000003000",
+    "x_ss_stub": "5A8A83C40ADA249C61F6B20210C9448C"
+  }
+}

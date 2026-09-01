@@ -1,0 +1,48 @@
+{
+  "name": "small timestamp (khronos hex padding branch)",
+  "input": {
+    "params": [
+      [
+        "device_id",
+        "7400000111111111111"
+      ],
+      [
+        "version_name",
+        "30.1.2"
+      ],
+      [
+        "aid",
+        "1233"
+      ]
+    ],
+    "data": [
+      [
+        "k",
+        "v"
+      ]
+    ],
+    "cookie": null,
+    "timestamp": 100000000,
+    "sec_device_id": "secdev123456789ABCDEF",
+    "aid": 1233,
+    "license_id": 1611921764,
+    "platform": 0,
+    "sdk_version_str": "v05.00.06-ov-android",
+    "sdk_version": 167775296,
+    "version": 8404
+  },
+  "random": {
+    "gorgon_byte3": 0,
+    "gorgon_byte7": 240,
+    "argus_rand": 0,
+    "ladon_random": "00000000"
+  },
+  "expected": {
+    "x_argus": "8oEW98egusY+LFvG7FFEoEjWcAaUPwMYvSaUAPMjZlDHFKv1aOGTMCrTkxK42r/mYJ6pWLdupczQOkkFnKfkoYEWqkmSRxo/VYWObwjKG+tWymCiDRodITlsOHBQ3ceNifPyJpM0zR6RDvpkf3Bx53U3Z5ngDaPnOlNBo/PkMrsyVoH6RzQkUgeiWxQorDxEd9FeSiYQHZqYWdayOzZWjfI9nwvYOEzZQ/1fffDjVMHkNtKZw0PMMO29dHbrxiLRTFk5naq/t7E2JQFpQAE2rCpsou3orbztCjlStU1WkgCN0Q==",
+    "x_ladon": "AAAAAHtpihKuemB1oWiMnrw0Gr5+3bgGY8R5iecsoKrmLncl",
+    "x_gorgon": "8404f0000000e6192e7d5a8a83c4000000000101020405f5e100",
+    "x_khronos": "100000000",
+    "x_tt_request_ticket": "100000000000",
+    "x_ss_stub": "5A8A83C40ADA249C61F6B20210C9448C"
+  }
+}

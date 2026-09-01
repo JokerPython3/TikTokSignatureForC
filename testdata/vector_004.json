@@ -1,0 +1,69 @@
+{
+  "name": "utf-8 values, empty values, cookie set",
+  "input": {
+    "params": [
+      [
+        "device_id",
+        "7422000000000000009"
+      ],
+      [
+        "version_name",
+        "41.9.3"
+      ],
+      [
+        "q",
+        "W\u00eaird \u00fcn\u00efcode \u6d4b\u8bd5 & stuff=1 +"
+      ],
+      [
+        "empty",
+        ""
+      ]
+    ],
+    "data": [
+      [
+        "email",
+        "us\u00e9r+plus@example.com"
+      ],
+      [
+        "note",
+        "j\u0131\u01cen/t\u01d0 & \u00e9"
+      ],
+      [
+        "empty",
+        ""
+      ]
+    ],
+    "cookie": [
+      [
+        "cook",
+        "crimson"
+      ],
+      [
+        "x",
+        "y"
+      ]
+    ],
+    "timestamp": 1788041678,
+    "sec_device_id": "secdev123456789ABCDEF",
+    "aid": 1233,
+    "license_id": 1611921764,
+    "platform": 0,
+    "sdk_version_str": "v05.00.06-ov-android",
+    "sdk_version": 167775296,
+    "version": 8404
+  },
+  "random": {
+    "gorgon_byte3": 127,
+    "gorgon_byte7": 50,
+    "argus_rand": 3456789,
+    "ladon_random": "0a0b0c0d"
+  },
+  "expected": {
+    "x_argus": "8oH/md5Ww1h62dIQeNxXWSCnFbn+VVrzc9/h+z2vi2DJjkOAzam3DSQPIuCpjA3B/z3ccV4bk7ALczehMkxItHvdKlxVGu/hwmVspOCEZTBCw5EaiyQQnBFDEcaz43bDYpZTTJfwKHqD8UE58cuyYIH5YWs3upjlhdMHA4XCyg/zyh0zEIXnyc85e3ZzbLG9j0kf0vZLBtBIJjvwhB1tY+jhc88QtLk03/TPVUbDtVu5yatZ/y9bwImBq3IPiLaXHLjq8t9JMzSlGF3ooLZDJZbC6amG+Dmy8cg5IZSaqtFMjS/H876GoHaC228wHq/9GxU=",
+    "x_ladon": "CgsMDXjphhY7XTDzPqj42MLaSvSzkHl6vIj7Gv9M0gf7vdpU",
+    "x_gorgon": "8404307f00000a3ed2321c0f15b62ec66bc0010102046a9359ce",
+    "x_khronos": "1788041678",
+    "x_tt_request_ticket": "1788041678000",
+    "x_ss_stub": "1C0F15B6B79DFF14A103D176A78BD1AF"
+  }
+}

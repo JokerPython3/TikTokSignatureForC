@@ -1,0 +1,59 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 16,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "default",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/build-${presetName}",
+      "cacheVariables": {
+        "CMAKE_C_STANDARD": "11",
+        "CMAKE_C_EXTENSIONS": "OFF"
+      }
+    },
+    {
+      "name": "debug",
+      "displayName": "Debug",
+      "inherits": "default",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_FLAGS": "-Wall -Wextra -Wpedantic -g -O0"
+      }
+    },
+    {
+      "name": "release",
+      "displayName": "Release",
+      "inherits": "default",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_C_FLAGS": "-O2 -DNDEBUG"
+      }
+    },
+    {
+      "name": "strict",
+      "displayName": "Strict (warnings as errors)",
+      "inherits": "debug",
+      "cacheVariables": {
+        "CMAKE_C_FLAGS": "-Wall -Wextra -Wpedantic -Werror -g -O0"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "debug",     "configurePreset": "debug" },
+    { "name": "release",   "configurePreset": "release" },
+    { "name": "strict",    "configurePreset": "strict" }
+  ],
+  "testPresets": [
+    {
+      "name": "default",
+      "configurePreset": "debug",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

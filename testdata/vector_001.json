@@ -1,0 +1,248 @@
+{
+  "name": "full Example.py-style request",
+  "input": {
+    "params": [
+      [
+        "passport-sdk-version",
+        "6041890"
+      ],
+      [
+        "device_platform",
+        "android"
+      ],
+      [
+        "os",
+        "android"
+      ],
+      [
+        "ssmix",
+        "a"
+      ],
+      [
+        "_rticket",
+        "1788041680221"
+      ],
+      [
+        "cdid",
+        "3a6f6d4e-..."
+      ],
+      [
+        "channel",
+        "googleplay"
+      ],
+      [
+        "aid",
+        "1233"
+      ],
+      [
+        "app_name",
+        "musical_ly"
+      ],
+      [
+        "version_code",
+        "410903"
+      ],
+      [
+        "version_name",
+        "41.9.3"
+      ],
+      [
+        "manifest_version_code",
+        "2024109030"
+      ],
+      [
+        "update_version_code",
+        "2024109030"
+      ],
+      [
+        "ab_version",
+        "41.9.3"
+      ],
+      [
+        "resolution",
+        "1920*985"
+      ],
+      [
+        "dpi",
+        "180"
+      ],
+      [
+        "device_type",
+        "WayDroid x86_64 Device"
+      ],
+      [
+        "device_brand",
+        "waydroid"
+      ],
+      [
+        "language",
+        "en"
+      ],
+      [
+        "os_api",
+        "33"
+      ],
+      [
+        "os_version",
+        "13"
+      ],
+      [
+        "ac",
+        "mobile"
+      ],
+      [
+        "is_pad",
+        "1"
+      ],
+      [
+        "app_type",
+        "normal"
+      ],
+      [
+        "sys_region",
+        "US"
+      ],
+      [
+        "last_install_time",
+        "1788041680"
+      ],
+      [
+        "timezone_name",
+        "GMT"
+      ],
+      [
+        "app_language",
+        "en"
+      ],
+      [
+        "timezone_offset",
+        "0"
+      ],
+      [
+        "host_abi",
+        "arm64-v8a"
+      ],
+      [
+        "locale",
+        "en"
+      ],
+      [
+        "ac2",
+        "unknown"
+      ],
+      [
+        "uoo",
+        "1"
+      ],
+      [
+        "op_region",
+        "US"
+      ],
+      [
+        "build_number",
+        "41.9.3"
+      ],
+      [
+        "region",
+        "US"
+      ],
+      [
+        "ts",
+        "1788041680"
+      ],
+      [
+        "iid",
+        "7400000000000000001"
+      ],
+      [
+        "device_id",
+        "7442000000000000001"
+      ],
+      [
+        "openudid",
+        "4a8e0f1c2b3d5400"
+      ],
+      [
+        "support_webview",
+        "1"
+      ],
+      [
+        "reg_store_region",
+        "ca"
+      ],
+      [
+        "user_selected_region",
+        "0"
+      ],
+      [
+        "okhttp_version",
+        "4.2.243.16-tiktok-fix"
+      ],
+      [
+        "use_store_region_cookie",
+        "1"
+      ]
+    ],
+    "data": [
+      [
+        "account_sdk_source",
+        "app"
+      ],
+      [
+        "rule_strategies",
+        "2"
+      ],
+      [
+        "mix_mode",
+        "1"
+      ],
+      [
+        "multi_login",
+        "1"
+      ],
+      [
+        "type",
+        "3736"
+      ],
+      [
+        "email",
+        "73616d706c65"
+      ],
+      [
+        "email_theme",
+        "2"
+      ],
+      [
+        "use_passport_ticket",
+        "1"
+      ],
+      [
+        "scene",
+        "3"
+      ]
+    ],
+    "cookie": null,
+    "timestamp": 1700000000,
+    "sec_device_id": "secdev123456789ABCDEF",
+    "aid": 1233,
+    "license_id": 1611921764,
+    "platform": 0,
+    "sdk_version_str": "v05.00.06-ov-android",
+    "sdk_version": 167775296,
+    "version": 8404
+  },
+  "random": {
+    "gorgon_byte3": 17,
+    "gorgon_byte7": 39,
+    "argus_rand": 123456789,
+    "ladon_random": "01020304"
+  },
+  "expected": {
+    "x_argus": "8oH/md5Ww1h62dIQeNxXWSCnFbn+VVrzc9/h+z2vi2DJjkOAzam3DSQPIuCpjA3B/z3ccV4bk7ALczehMkxItHvdKlxVGu/hwmVspOCEZTBCw40G8SnykYy0p07hNQF6aEXrNa656ukruX6o6uLOZPO41GgxV3Bh7UuiJ4KsOt0NUac4yKHSxhrIOHx5X39Q+rcgf94iHldB5vuaJ5xohKdP0p6NWV3D5fMlW9ssycFlVPOY4A/N0LUvWJKWpaLkYISyv81sxnGw9jfPkInCDuovtMK845q5WdhXizyDytJS3ZZ4A5GFffk044N99eXfG2s=",
+    "x_ladon": "AQIDBDVFfP9USKdZmCmktvwqxsZDhD8hxvfmokrn6O+AmKsJ",
+    "x_gorgon": "8404201100008fb6ae86f04b350c00000000010102046553f100",
+    "x_khronos": "1700000000",
+    "x_tt_request_ticket": "1700000000000",
+    "x_ss_stub": "F04B350C58A2D33CD43E6D6D7600E483"
+  }
+}
