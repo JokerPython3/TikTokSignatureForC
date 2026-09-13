@@ -80,7 +80,9 @@ static int64_t rand_int64_range(int64_t min, int64_t max) {
     for (int i = 0; i < 8; i++) v = (v << 8) | b[i];
     return min + (int64_t)(v % range);
 }
-
+static int64_t now_unixk(void) {
+    return (int64_t)time(NULL);
+}
 int main(void) {
     printf("[1] Building request\n");
 
@@ -90,12 +92,37 @@ int main(void) {
     tt_param_t *params = NULL;
     size_t params_count = 0;
     size_t params_cap = 0;
+    int64_t now = now_unixk();
 
-    add_param(&params, &params_count, &params_cap, "passport-sdk-version", "6041890");
-    add_param(&params, &params_count, &params_cap, "device_platform", "android");
-    add_param(&params, &params_count, &params_cap, "os", "android");
-    add_param(&params, &params_count, &params_cap, "ssmix", "a");
+        add_param(&params, &params_count, &params_cap,
+              "passport-sdk-version", "6031490");
 
+    add_param(&params, &params_count, &params_cap,
+              "request_tag_from", "h5");
+
+    add_param(&params, &params_count, &params_cap,
+              "fixed_mix_mode", "1");
+
+    add_param(&params, &params_count, &params_cap,
+              "mix_mode", "1");
+
+    add_param(&params, &params_count, &params_cap,
+              "account_param", "");
+
+    add_param(&params, &params_count, &params_cap,
+              "scene", "1");
+
+    add_param(&params, &params_count, &params_cap,
+              "device_platform", "android");
+
+    add_param(&params, &params_count, &params_cap,
+              "os", "android");
+
+    add_param(&params, &params_count, &params_cap,
+              "ssmix", "a");
+
+    add_param(&params, &params_count, &params_cap,
+              "type", "3736");
     char rticket[64];
     snprintf(rticket, sizeof(rticket), "%lld", (long long)now_milli);
     add_param(&params, &params_count, &params_cap, "_rticket", rticket);
@@ -103,37 +130,85 @@ int main(void) {
     char *cdid = hex_uuid4();
     add_param(&params, &params_count, &params_cap, "cdid", cdid);
     free(cdid);
+    add_param(&params, &params_count, &params_cap,
+              "ac", "MOBILE");
 
-    add_param(&params, &params_count, &params_cap, "channel", "googleplay");
-    add_param(&params, &params_count, &params_cap, "aid", "1233");
-    add_param(&params, &params_count, &params_cap, "app_name", "musical_ly");
-    add_param(&params, &params_count, &params_cap, "version_code", "410903");
-    add_param(&params, &params_count, &params_cap, "version_name", "41.9.3");
-    add_param(&params, &params_count, &params_cap, "manifest_version_code", "2024109030");
-    add_param(&params, &params_count, &params_cap, "update_version_code", "2024109030");
-    add_param(&params, &params_count, &params_cap, "ab_version", "41.9.3");
-    add_param(&params, &params_count, &params_cap, "resolution", "1920*985");
-    add_param(&params, &params_count, &params_cap, "dpi", "180");
-    add_param(&params, &params_count, &params_cap, "device_type", "WayDroid x86_64 Device");
-    add_param(&params, &params_count, &params_cap, "device_brand", "waydroid");
-    add_param(&params, &params_count, &params_cap, "language", "en");
-    add_param(&params, &params_count, &params_cap, "os_api", "33");
-    add_param(&params, &params_count, &params_cap, "os_version", "13");
-    add_param(&params, &params_count, &params_cap, "ac", "mobile");
-    add_param(&params, &params_count, &params_cap, "is_pad", "1");
-    add_param(&params, &params_count, &params_cap, "app_type", "normal");
-    add_param(&params, &params_count, &params_cap, "sys_region", "US");
-    add_param(&params, &params_count, &params_cap, "last_install_time", "1788041680");
-    add_param(&params, &params_count, &params_cap, "timezone_name", "GMT");
-    add_param(&params, &params_count, &params_cap, "app_language", "en");
-    add_param(&params, &params_count, &params_cap, "timezone_offset", "0");
-    add_param(&params, &params_count, &params_cap, "host_abi", "arm64-v8a");
-    add_param(&params, &params_count, &params_cap, "locale", "en");
-    add_param(&params, &params_count, &params_cap, "ac2", "unknown");
-    add_param(&params, &params_count, &params_cap, "uoo", "1");
-    add_param(&params, &params_count, &params_cap, "op_region", "US");
-    add_param(&params, &params_count, &params_cap, "build_number", "41.9.3");
-    add_param(&params, &params_count, &params_cap, "region", "US");
+    add_param(&params, &params_count, &params_cap,
+              "channel", "googleplay");
+
+    add_param(&params, &params_count, &params_cap,
+              "app_name", "musical_ly");
+
+    add_param(&params, &params_count, &params_cap,
+              "version_code", "370004");
+
+    add_param(&params, &params_count, &params_cap,
+              "version_name", "37.0.4");
+
+    add_param(&params, &params_count, &params_cap,
+              "ab_version", "37.0.4");
+
+    add_param(&params, &params_count, &params_cap,
+              "device_type", "WayDroid x86_64 Device");
+
+    add_param(&params, &params_count, &params_cap,
+              "device_brand", "waydroid");
+
+    add_param(&params, &params_count, &params_cap,
+              "language", "en");
+
+    add_param(&params, &params_count, &params_cap,
+              "os_api", "33");
+
+    add_param(&params, &params_count, &params_cap,
+              "os_version", "13");
+
+    add_param(&params, &params_count, &params_cap,
+              "openudid", "95a2f1db117b750c");
+
+    add_param(&params, &params_count, &params_cap,
+              "manifest_version_code", "2023700040");
+
+    add_param(&params, &params_count, &params_cap,
+              "resolution", "1920*985");
+
+    add_param(&params, &params_count, &params_cap,
+              "dpi", "180");
+
+    add_param(&params, &params_count, &params_cap,
+              "update_version_code", "2023700040");
+
+
+//     add_param(&params, &params_count, &params_cap, "channel", "googleplay");
+//     add_param(&params, &params_count, &params_cap, "aid", "1233");
+//     add_param(&params, &params_count, &params_cap, "app_name", "musical_ly");
+//     add_param(&params, &params_count, &params_cap, "version_code", "370004");
+//     add_param(&params, &params_count, &params_cap, "version_name", "37.0.4");
+//     //add_param(&params, &params_count, &params_cap, "manifest_version_code", "2024109030");
+//    // add_param(&params, &params_count, &params_cap, "update_version_code", "2024109030");
+//     add_param(&params, &params_count, &params_cap, "ab_version", "37.0.7");
+//     add_param(&params, &params_count, &params_cap, "resolution", "1920*985");
+//     add_param(&params, &params_count, &params_cap, "dpi", "180");
+//     add_param(&params, &params_count, &params_cap, "device_type", "WayDroid x86_64 Device");
+//     add_param(&params, &params_count, &params_cap, "device_brand", "waydroid");
+//     add_param(&params, &params_count, &params_cap, "language", "en");
+//     add_param(&params, &params_count, &params_cap, "os_api", "33");
+//     add_param(&params, &params_count, &params_cap, "os_version", "13");
+//     add_param(&params, &params_count, &params_cap, "ac", "mobile");
+//     add_param(&params, &params_count, &params_cap, "is_pad", "1");
+//     add_param(&params, &params_count, &params_cap, "app_type", "normal");
+//     add_param(&params, &params_count, &params_cap, "sys_region", "US");
+//     add_param(&params, &params_count, &params_cap, "last_install_time", "1788041680");
+//     add_param(&params, &params_count, &params_cap, "timezone_name", "GMT");
+//     add_param(&params, &params_count, &params_cap, "app_language", "en");
+//     add_param(&params, &params_count, &params_cap, "timezone_offset", "0");
+//     add_param(&params, &params_count, &params_cap, "host_abi", "arm64-v8a");
+//     add_param(&params, &params_count, &params_cap, "locale", "en");
+//     add_param(&params, &params_count, &params_cap, "ac2", "unknown");
+//     add_param(&params, &params_count, &params_cap, "uoo", "1");
+//     add_param(&params, &params_count, &params_cap, "op_region", "US");
+//     add_param(&params, &params_count, &params_cap, "build_number", "41.9.3");
+//     add_param(&params, &params_count, &params_cap, "region", "US");
 
     char ts_str[64];
     snprintf(ts_str, sizeof(ts_str), "%lld", (long long)now_unix);
@@ -157,12 +232,68 @@ int main(void) {
     for (int i = 0; i < 8; i++) snprintf(openudid + i * 2, 3, "%02x", rand8[i]);
     openudid[16] = '\0';
     add_param(&params, &params_count, &params_cap, "openudid", openudid);
+add_param(&params, &params_count, &params_cap,
+              "is_pad", "1");
 
-    add_param(&params, &params_count, &params_cap, "support_webview", "1");
-    add_param(&params, &params_count, &params_cap, "reg_store_region", "ca");
-    add_param(&params, &params_count, &params_cap, "user_selected_region", "0");
-    add_param(&params, &params_count, &params_cap, "okhttp_version", "4.2.243.16-tiktok-fix");
-    add_param(&params, &params_count, &params_cap, "use_store_region_cookie", "1");
+    add_param(&params, &params_count, &params_cap,
+              "app_type", "normal");
+
+    add_param(&params, &params_count, &params_cap,
+              "sys_region", "US");
+              char last_install_time[32];
+    snprintf(
+        last_install_time,
+        sizeof(last_install_time),
+        "%lld",
+        (long long)(now - 4)
+    );
+
+    add_param(
+        &params, &params_count, &params_cap,
+        "last_install_time", last_install_time
+    );
+
+    add_param(&params, &params_count, &params_cap,
+              "timezone_name", "GMT");
+
+    add_param(&params, &params_count, &params_cap,
+              "app_language", "en");
+
+    add_param(&params, &params_count, &params_cap,
+              "ac2", "unknown");
+
+    add_param(&params, &params_count, &params_cap,
+              "uoo", "1");
+
+    add_param(&params, &params_count, &params_cap,
+              "op_region", "US");
+
+    add_param(&params, &params_count, &params_cap,
+              "timezone_offset", "0");
+
+    add_param(&params, &params_count, &params_cap,
+              "build_number", "37.0.4");
+
+    add_param(&params, &params_count, &params_cap,
+              "host_abi", "arm64-v8a");
+
+    add_param(&params, &params_count, &params_cap,
+              "locale", "en");
+
+    add_param(&params, &params_count, &params_cap,
+              "region", "US");
+add_param(&params, &params_count, &params_cap,
+              "support_webview", "1");
+
+    add_param(&params, &params_count, &params_cap,
+              "reg_store_region", "nl");
+
+    add_param(&params, &params_count, &params_cap,
+              "okhttp_version", "4.2.195.9-tiktok");
+
+    add_param(&params, &params_count, &params_cap,
+              "use_store_region_cookie", "1");
+
 
     printf("Enter email to send code -> ");
     char email[256];
